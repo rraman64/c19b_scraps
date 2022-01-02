@@ -96,12 +96,13 @@ ct:
     # pattern
     # ...MediaBulletin<31><oct><2021>.pdf
     # - http://cghealth.nic.in/cghealth17/Information/content/CORONA/MediaBulletin31oct2021.pdf
-  type: image
+  type: pdf
   url: _inputs/ct.jpeg
   config:
+    page: 2
     translation: True
-    start_key: auto
-    end_key: auto
+    #start_key: auto
+    end_key: अन्य
 
 # Merged with Dadra & Nagar Haveli
 dd:
@@ -189,7 +190,7 @@ hr:
   config:
     page: 2
     start_key: Gurugram
-    end_key: Total
+    end_key: Haryana
 
 hp:
   name: Himachal Pradesh
@@ -323,9 +324,11 @@ mh:
     - https://twitter.com/ani
     - https://twitter.com/pibmumbai
     - https://twitter.com/sanjayjog7
-  type: html
-  url: https://www.covid19maharashtragov.in/mh-covid/dbd-cases-file?_by=District&_by=Date
-
+  type: image
+  url: 
+  config:
+    translation: False
+    #end_key: Auto
 ml:
   name: Meghalaya
   state_code: ML
@@ -411,13 +414,13 @@ pb:
   url_sources:
     - https://nhm.punjab.gov.in/media-bulletin_Nov21.htm
     - Ask Rukmini
-  type: image
-  url: _inputs/pb3.jpeg
+  type: pdf
+  url: _inputs/pb.pdf
   config:
-    page: 4
+    page: 5,6
     start_key: Ludhiana
     end_key: Total
-    translation: False
+
 
 py:
   name: Puducherry
@@ -488,9 +491,10 @@ tg:
     - https://covid19.telangana.gov.in/announcements/media-bulletins/
   type: image
   url: _inputs/tg.jpeg
-  config:
-    translation: False
-
+  #config:
+    #translation: False
+    #start_key: ADILABAD
+    #end_key: YADADRI
 tr:
   name: Tripura
   state_code: TR
